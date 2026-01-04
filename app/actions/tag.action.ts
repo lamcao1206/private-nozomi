@@ -28,7 +28,7 @@ export async function createTag(
 
     revalidatePath('/tags');
     return { success: true };
-  } catch (error) {
+  } catch {
     return { error: 'Failed to create tag' };
   }
 }

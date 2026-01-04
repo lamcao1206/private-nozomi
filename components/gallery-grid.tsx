@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Image as ImageIcon } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Tag {
   id: number;
@@ -37,10 +38,11 @@ export default function GalleryGrid({ galleries, currentPage, totalPages }: Gall
             <Link href={`/gallery/${gallery.id}`}>
               <div className="aspect-square bg-muted relative">
                 {gallery.coverImage ? (
-                  <img
+                  <Image
                     src={gallery.coverImage}
                     alt={gallery.name}
                     className="object-cover w-full h-full"
+                    fill
                   />
                 ) : (
                   <div className="flex items-center justify-center h-full">

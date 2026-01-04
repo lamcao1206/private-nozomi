@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { createClient } from "@/lib/supabase/server";
 import GalleryViewer from "@/components/gallery-viewer";
 import { notFound } from "next/navigation";

@@ -64,12 +64,6 @@ export default function LoginPage() {
               )}
             </div>
 
-            {state?.message && (
-              <div className="rounded-md bg-destructive/10 p-3">
-                <p className="text-sm text-destructive">{state.message}</p>
-              </div>
-            )}
-
             <Button type="submit" className="w-full" disabled={pending}>
               {pending ? "Logging in..." : "Login"}
             </Button>

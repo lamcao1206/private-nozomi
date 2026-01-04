@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { createClient } from "@/lib/supabase/server";
 import GalleryGrid from "@/components/gallery-grid";
 import { Separator } from "@/components/ui/separator";
